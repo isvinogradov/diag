@@ -1,1 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T13:26:41.319Z" agent="5.0 (Windows)" version="15.6.1" etag="UN1YCQEz6812tdgKntBw" type="github"><diagram id="EtdOXZ_NZXkt9scqzqyG">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-28T13:40:40.142Z" agent="5.0 (Windows)" etag="VZa-GELasROr_tPOVqm3" version="15.6.1" type="github">
+  <diagram id="EtdOXZ_NZXkt9scqzqyG" name="Page-1">
+    <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="300" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="350" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LytkpoMySjS4SzXv9ZqJ-3" target="LytkpoMySjS4SzXv9ZqJ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-16" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LytkpoMySjS4SzXv9ZqJ-13">
+          <mxGeometry x="-0.2985" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-3" value="&lt;div&gt;Providers&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-8" value="Redis&lt;br&gt;MAIN CACHE" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=7.448275862069011;" vertex="1" parent="1">
+          <mxGeometry x="330" y="590" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-9" value="Load balancer" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="290" y="345" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="350" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LytkpoMySjS4SzXv9ZqJ-9" target="LytkpoMySjS4SzXv9ZqJ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LytkpoMySjS4SzXv9ZqJ-12" target="LytkpoMySjS4SzXv9ZqJ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-12" value="Data readers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="360" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-17" value="Персистентное хранилище актуальных данных по всем событиям и котировкам всех провайдеров" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="590" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-18" value="Принимают данные от провайдеров, записывают в общий кеш. По сути это замена ProviderCache всех провайдеров на централизованный аналог. Должен уметь хорошо масштабироваться. Может быть написан на разных языках." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="360" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-22" value="Провайдеры лишаются прослойки ProviderCache." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="410" width="110" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
