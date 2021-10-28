@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T14:00:27.389Z" agent="5.0 (Windows)" etag="SqmbiOsjNf_cWHocTc0h" version="15.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-28T14:02:49.133Z" agent="5.0 (Windows)" etag="Jiqom9h3EqaVZf9VNckx" version="15.6.1" type="github">
   <diagram id="EtdOXZ_NZXkt9scqzqyG" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="300" pageHeight="600" math="0" shadow="0">
       <root>
@@ -21,10 +21,10 @@
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-3" value="&lt;div&gt;Providers&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="80" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-8" value="Redis&lt;br&gt;MAIN CACHE" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=7.448275862069011;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="450" y="300" width="100" height="100" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-8" value="Redis&lt;br&gt;MAIN CACHE" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=7.448275862069011;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="290" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-9" value="Load balancer" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-9" value="Load balancer" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="290" y="65" width="70" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -43,7 +43,7 @@
           <mxGeometry x="510" y="80" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-17" value="Персистентное хранилище актуальных данных по событиям и котировкам всех провайдеров" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="570" y="320" width="180" height="90" as="geometry" />
+          <mxGeometry x="570" y="310" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-18" value="Принимает данные от провайдеров, записывают в общий кеш. По сути это замена ProviderCache всех провайдеров на централизованный аналог. &lt;br&gt;&lt;br&gt;Принимает обработанные данные от провайдеров и определяет нужно ли записывать изменение.&lt;br&gt;&lt;br&gt;Должен уметь хорошо масштабироваться. Может быть написан не на питоне. Может в себе кешировать текущий стейт чтоб не ходить постоянно в редис." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="640" y="80" width="270" height="200" as="geometry" />
@@ -58,40 +58,40 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-23" value="24h soft" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
-          <mxGeometry x="210" y="670" width="120" height="60" as="geometry" />
+          <mxGeometry x="210" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LytkpoMySjS4SzXv9ZqJ-24" target="LytkpoMySjS4SzXv9ZqJ-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-24" value="Запрос снимка всех актуальных данных" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="380" y="600" width="150" height="60" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-24" value="Запрос снимка актуальных данных на текущий момент" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="380" y="590" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LytkpoMySjS4SzXv9ZqJ-25" target="LytkpoMySjS4SzXv9ZqJ-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-25" value="Запросы обновлений" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="20" y="600" width="150" height="60" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-25" value="Запросы обновлений" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="20" y="590" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-33" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="490" width="100" height="40" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-33" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="20" y="480" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="500" width="100" height="40" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="30" y="490" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-35" value="Scanner API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="510" width="110" height="40" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-35" value="Scanner API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="LytkpoMySjS4SzXv9ZqJ-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LytkpoMySjS4SzXv9ZqJ-38" target="LytkpoMySjS4SzXv9ZqJ-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="490" width="100" height="40" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-38" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="380" y="480" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-39" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="500" width="100" height="40" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="390" y="490" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LytkpoMySjS4SzXv9ZqJ-40" value="Scanner API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="510" width="110" height="40" as="geometry" />
+        <mxCell id="LytkpoMySjS4SzXv9ZqJ-40" value="Scanner API" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="500" width="110" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
